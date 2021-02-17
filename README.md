@@ -24,7 +24,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Sobre o projeto
 
-[![Screenshot][Site Atual]](https://i.imgur.com/SKnz1oI.png)
+<img src="https://i.imgur.com/SKnz1oI.png">
 
 O objetivo desse repositório é reformular e refazer passo por passo o antigo site Doki Doki Translate Club
 
