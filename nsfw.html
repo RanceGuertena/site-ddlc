@@ -49,7 +49,7 @@
                                 <li class="active"><a href="./index.html">Home</a></li>
                                 <li><a href="">Categorias<span class="arrow_carrot-down"></span></a>
                                     <ul class="dropdown">
-                                        <li><a href="./lista-HTML/lista.html">Lista</a></li>
+                                        <li><a href="./jogos/lista.html">Lista</a></li>
                                         <li><a href="./outros.html">Outros Mods</a></li>
                                         <li><a href="./nsfw.html">+18</a></li>
                                     </ul>
@@ -122,8 +122,8 @@
                             </div>
                             <div class="filter__gallery">
                                 <div class="product__sidebar__view__item set-bg mix day years"
-                                data-setbg="./img/sidebar/apoia-se.png">
-                                <h5><a href="#">Nosso Apoia-se!</a></h5>
+                                data-setbg="img/sidebar/apoia-se.png">
+                                <h5><a href="https://apoia.se/ddtc">Nosso Apoia-se!</a></h5>
                             </div>
                 </div>
                 <div class="product__sidebar__view__item set-bg mix day"
@@ -152,7 +152,7 @@
                 <div class="footer__nav">
                     <ul>
                         <li><a href="./index.html">Home</a></li>
-                        <li><a href="./lista-HTML/lista.html">Lista de Mods</a></li>
+                        <li><a href="./jogos/lista.html">Lista de Mods</a></li>
                         <li><a href="https://discord.gg/3PB24jt">Discord</a></li>
                     </ul>
                 </div>
@@ -188,6 +188,25 @@
 <script src="./js/jquery.slicknav.js"></script>
 <script src="./js/owl.carousel.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    swal({
+        title: "Tem certeza?",
+        text: "Você quer entrar na sessão +18? Nós não iremos nos responsabilizar por quaisquer danos!",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true,
+    })
+    .then((willDelete) => {
+        if (willDelete) {
+            swal("Bem vindo a sessão +18", {
+            icon: "success",
+        });
+    } else {
+        window.location.href="./index.html"
+        }
+    });
+</script>
 
 </body>
 
